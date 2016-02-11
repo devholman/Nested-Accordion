@@ -1,0 +1,185 @@
+* {
+	box-sizing: border-box;
+}
+
+.align-children{
+	font-size: 0;
+}
+
+.align-children > *{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/*************LEFT TITTLES*************/
+.page-header{
+	margin-bottom: 5%;
+	margin-top: 3%;
+}
+.titles{
+	margin-left: 10%;
+	color: #3498db;
+	font-family: sans-serif;
+	font-weight: normal;
+}
+.titles h2{
+	font-size: 20px;
+	position: relative;
+}
+
+.titles h1{
+	font-size: 30px;
+	margin-top: -2%;
+
+}
+/********************HELP BUTTON***************/
+#help-icon{
+	position: absolute;
+	top:4%;
+	left: 21.6%;
+}
+
+.help-info{
+	border:1px solid;
+	font-size: 15px;
+	position: absolute;
+	font-family: sans-serif;
+	top:5%;
+	left: 23%;
+	opacity: 0;
+	z-index: 2;
+	width: 70%;
+}
+
+#help-icon:hover ~ .help-info{
+	opacity: 1;
+	background-color: #3498db;
+	color:#ecf0f1;
+}
+
+/***********NAVIGATION BUTTONS******************/
+
+.nav-buttons-container{
+	position: absolute;
+	right: 10%;
+	top: 8%;
+	font-size: 20px;
+	color: #3498db;
+	
+}
+
+.nav-buttons-container > *{
+	border-radius: 55%;
+	border: 4px solid #3498db;
+	padding: 1%;
+	position: relative;
+
+}
+
+.strong:hover{
+	background-color: #3498db;
+	color:#ecf0f1;
+}
+
+/******************BACK BUTTON*********/
+.previous-pg h3{
+	opacity: 0;
+	font-size: 10px;
+	position: absolute;
+	left: -308%;
+	top: 80%;
+	color:#3498db;
+}
+#back:hover ~ .previous-pg{
+	opacity: 1;
+
+}
+/*<********NEXT BUTTON ****************>*/
+.next-pg{
+	opacity: 0;
+	font-size:10px;
+	position: absolute;
+	color:#3498db;
+	left: -175%;
+}
+
+#forward:hover ~ .next-pg{
+	opacity: 1;
+}
+#minus-border{
+	border-top:none;
+}
+/**************BACK TO HOMEPAGE********/
+.homepage-button{
+	opacity: 0;
+	font-size: 10px;
+	position: absolute;
+	color: #3498db;
+	left: -350%;
+}
+
+#return:hover ~ .homepage-button{
+	opacity: 1;
+
+}
+/**************ARCHIVE*****************/
+.archive-button{
+	opacity: 0;
+	font-size: 10px;
+	position: absolute;
+	color: #3498db;
+	left: -252%;
+}
+
+#archive:hover ~ .archive-button{
+	opacity: 1;
+}
+
+/***************MENU CONTAINER****************************/
+.container{
+	border-bottom: 1px solid #ecf0f1;
+	border-top: 1px solid #ecf0f1;
+	position: relative;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/*************LEFT ARROWS**************/
+.arrow{
+	position: absolute;
+	top:20%;
+}
+
+.container:hover > .arrow > .material-icons{
+	
+	transform: rotateZ(40deg);
+	color:#3498db;
+}
+
+.arrow > .material-icons{
+	color: #bdc3c7;
+	font-size: 60px;
+}
+
+
+/************MENU FONT**************/
+
+.container h1{
+	font-size: 45px;
+	color: #3498db;
+	margin-left: 12%;
+	font-family: sans-serif;
+	font-weight: lighter;
+
+}
+
+/****************MENU ITEM ONE*****************/
+
+.container p{
+	color: #3498db;
+	opacity: 0;
+}
+
+.description-box:focus 	~ .container p{
+	opacity: 0;
+}
